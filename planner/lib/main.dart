@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'morabi',
       theme: new ThemeData(
 
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.redAccent,
       ),
       home: new LoginPage(),
     );
