@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//import 'package:planner/ui/Home_page.dart';
 import 'package:planner/ui/login_page.dart';
 
 void main() => runApp(new MyApp());
@@ -10,8 +11,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'morabi',
       theme: new ThemeData(
-
-        primarySwatch: Colors.redAccent,
+        primarySwatch: Colors.red,
       ),
       home: new LoginPage(),
     );
