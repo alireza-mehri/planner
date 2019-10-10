@@ -16,7 +16,7 @@ class SplashScreenState extends State<SplashScreen> {
   }
 
   navigationPage() {
-    Navigator.of(context).pushNamed('/');
+    Navigator.of(context).pushReplacementNamed('/');
   }
 
   @override
@@ -30,7 +30,7 @@ class SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Scaffold(
-      backgroundColor: Colors.redAccent,
+      backgroundColor: Colors.blue[400],
       body: new Stack(
         fit: StackFit.expand,
         children: <Widget>[

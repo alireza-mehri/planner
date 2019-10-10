@@ -16,12 +16,12 @@ class _LoginPageState extends State<LoginPage>
     with SingleTickerProviderStateMixin {
 
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
-
-  final FocusNode myFocusNodeEmailLogin = FocusNode();
+//meghdar haye login o .. baraye API
+  final FocusNode myFocusNodephoneLogin = FocusNode();
   final FocusNode myFocusNodePasswordLogin = FocusNode();
 
   final FocusNode myFocusNodePassword = FocusNode();
-  final FocusNode myFocusNodeEmail = FocusNode();
+  final FocusNode myFocusNodephoneR = FocusNode();
   final FocusNode myFocusNodeName = FocusNode();
 
   TextEditingController loginEmailController = new TextEditingController();
@@ -73,8 +73,8 @@ class _LoginPageState extends State<LoginPage>
                     Padding(
                       padding: EdgeInsets.only(top: 35.0),
                       child: new Image(
-                          width: 160.0,
-                          height: 180.0,
+                          width: 70.0,
+                          height: 80.0,
                           fit: BoxFit.fill,
                           image: new AssetImage('assets/img/login_logo.png')),
                     ),
@@ -122,7 +122,7 @@ class _LoginPageState extends State<LoginPage>
   @override
   void dispose() {
     myFocusNodePassword.dispose();
-    myFocusNodeEmail.dispose();
+    myFocusNodephoneR.dispose();
     myFocusNodeName.dispose();
     _pageController?.dispose();
     super.dispose();
@@ -150,7 +150,7 @@ class _LoginPageState extends State<LoginPage>
         style: TextStyle(
             color: Colors.white,
             fontSize: 16.0,
-            fontFamily: "WorkSansSemiBold"),
+            fontFamily: "Iransans"),
       ),
       backgroundColor: Colors.blue,
       duration: Duration(seconds: 3),
@@ -228,8 +228,8 @@ class _LoginPageState extends State<LoginPage>
                       Padding(
                         padding: EdgeInsets.only(
                             top: 20.0, bottom: 20.0, left: 25.0, right: 25.0),
-                        child: TextField(
-                          focusNode: myFocusNodeEmailLogin,
+                        child: TextField(textAlign: prefix0.TextAlign.center,
+                          focusNode: myFocusNodephoneLogin,
                           maxLines: 1,
                           maxLength: 11,
                           controller: loginEmailController,
@@ -245,7 +245,7 @@ class _LoginPageState extends State<LoginPage>
                               color: Colors.black,
                               size: 22.0,
                             ),
-                            hintText: "(09366000000) شماره تلفن",
+                            hintText: "(09xxxxxxxxx) شماره تلفن",
                             hintStyle: TextStyle(
                                 fontFamily: "Iransans", fontSize: 17.0),
                           ),
@@ -259,7 +259,7 @@ class _LoginPageState extends State<LoginPage>
                       Padding(
                         padding: EdgeInsets.only(
                             top: 10.0, bottom: 20.0, left: 25.0, right: 25.0),
-                        child: TextField(
+                        child: TextField(textAlign: prefix0.TextAlign.center,
                           focusNode: myFocusNodePasswordLogin,
                           controller: loginPasswordController,
                           obscureText: _obscureTextLogin,
@@ -336,7 +336,9 @@ class _LoginPageState extends State<LoginPage>
                       ),
                     ),
                     onPressed: () =>
-                        showInSnackBar("Login button pressed")),
+                        //FocusScope.of(context).requestFocus(myFocusNodePasswordLogin),
+                        showInSnackBar("وارد شدید")
+                        ),
               ),
             ],
           ),
@@ -479,7 +481,7 @@ class _LoginPageState extends State<LoginPage>
                       Padding(
                         padding: EdgeInsets.only(
                             top: 20.0, bottom: 20.0, left: 25.0, right: 25.0),
-                        child: TextField(
+                        child: TextField(textAlign: prefix0.TextAlign.center,
                           //textDirection: prefix0.TextDirection.rtl,
                           focusNode: myFocusNodeName,
                           controller: signupNameController,
@@ -509,8 +511,8 @@ class _LoginPageState extends State<LoginPage>
                       Padding(
                         padding: EdgeInsets.only(
                             top: 10.0, bottom: 20.0, left: 25.0, right: 25.0),
-                        child: TextField(
-                          focusNode: myFocusNodeEmail,
+                        child: TextField(textAlign: prefix0.TextAlign.center,
+                          focusNode: myFocusNodephoneR,
                           maxLines: 1,
                           maxLength: 11,
                           controller: signupEmailController,
@@ -525,7 +527,7 @@ class _LoginPageState extends State<LoginPage>
                               FontAwesomeIcons.phone,
                               color: Colors.black,
                             ),
-                            hintText: "(09366000000) شماره تلفن",
+                            hintText: "(09xxxxxxxxx) شماره تلفن",
                             hintStyle: TextStyle(
                                 fontFamily: "Iransans", fontSize: 16.0),
                           ),
@@ -539,7 +541,7 @@ class _LoginPageState extends State<LoginPage>
                       Padding(
                         padding: EdgeInsets.only(
                             top: 20.0, bottom: 20.0, left: 25.0, right: 25.0),
-                        child: TextField(
+                        child: TextField(textAlign: prefix0.TextAlign.center,
                           focusNode: myFocusNodePassword,
                           controller: signupPasswordController,
                           obscureText: _obscureTextSignup,
@@ -577,7 +579,7 @@ class _LoginPageState extends State<LoginPage>
                       Padding(
                         padding: EdgeInsets.only(
                             top: 5.0, bottom: 20.0, left: 25.0, right: 25.0),
-                        child: TextField(
+                        child: TextField(textAlign: prefix0.TextAlign.center,
                           controller: signupConfirmPasswordController,
                           obscureText: _obscureTextSignupConfirm,
                           style: TextStyle(
@@ -652,7 +654,7 @@ class _LoginPageState extends State<LoginPage>
                       ),
                     ),
                     onPressed: () =>
-                        showInSnackBar("SignUp button pressed")),
+                        showInSnackBar("ثبت نام شدید")),
               ),
             ],
           ),
