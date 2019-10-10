@@ -222,7 +222,7 @@ class _LoginPageState extends State<LoginPage>
                 ),
                 child: Container(
                   width: 300.0,
-                  height: 200.0,
+                  height: 210.0,
                   child: Column(
                     children: <Widget>[
                       Padding(
@@ -336,8 +336,9 @@ class _LoginPageState extends State<LoginPage>
                       ),
                     ),
                     onPressed: () =>
+                        Navigator.of(context).pushNamed("/home")
                         //FocusScope.of(context).requestFocus(myFocusNodePasswordLogin),
-                        showInSnackBar("وارد شدید")
+                        //showInSnackBar("وارد شدید")
                         ),
               ),
             ],
