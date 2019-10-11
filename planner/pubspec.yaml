@@ -57,3 +57,6 @@ flutter:
     - family: WorkSansMedium
       fonts:
         - asset: assets/fonts/Work_Sans/WorkSans-Medium.ttf
+    - family: CustomIcons
+      fonts:
+        - asset: assets/custom_icons.ttf

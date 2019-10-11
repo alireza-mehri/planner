@@ -59,12 +59,14 @@ class _LoginPageState extends State<LoginPage>
                 decoration: new BoxDecoration(
                   gradient: new LinearGradient(
                       colors: [
-                        Theme.Colors.loginGradientStart,
-                        Theme.Colors.loginGradientEnd
-                      ],
-                      begin: const FractionalOffset(0.0, 0.0),
-                      end: const FractionalOffset(1.0, 1.0),
-                      stops: [0.0, 1.0],
+                Color(0xFF3594DD),
+                Color(0xFF4563DB),
+                Color(0xFF5036D5),
+                Color(0xFF5B16D0),
+    ],
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      stops: [0.1, 0.4, 0.7, 0.9],
                       tileMode: TileMode.clamp),
                 ),
                 child: Column(
@@ -336,7 +338,7 @@ class _LoginPageState extends State<LoginPage>
                       ),
                     ),
                     onPressed: () =>
-                        Navigator.of(context).pushNamed("/home")
+                        Navigator.of(context).pushNamed("/intro"),
                         //FocusScope.of(context).requestFocus(myFocusNodePasswordLogin),
                         //showInSnackBar("وارد شدید")
                         ),

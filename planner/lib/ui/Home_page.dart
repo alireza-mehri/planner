@@ -26,9 +26,6 @@ class _HomemainState extends State<Homemain> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),backgroundColor: Color.fromRGBO(12, 157, 210, 1.0),
-      ),
       body: pages[currentIndex],
       bottomNavigationBar: BottomNavyBar(
         selectedIndex: currentIndex,
@@ -40,22 +37,22 @@ class _HomemainState extends State<Homemain> {
           BottomNavyBarItem(
             icon: Icon(Icons.settings_applications),
             title: Text('تنظیمات'),
-            activeColor: Colors.blueAccent,
+            activeColor: Color(0xFF4563DB),
           ),
           BottomNavyBarItem(
               icon: Icon(Icons.featured_play_list),
               title: Text('برنامه ها'),
-              activeColor: Colors.blueAccent
+              activeColor: Color(0xFF4563DB),
           ),
           BottomNavyBarItem(
               icon: Icon(Icons.message),
               title: Text('پیام ها'),
-              activeColor: Colors.blueAccent
+              activeColor: Color(0xFF4563DB),
           ),
           BottomNavyBarItem(
               icon: Icon(Icons.home),
               title: Text('خانه'),
-              activeColor: Colors.blueAccent
+              activeColor: Color(0xFF4563DB),
           ),
         ],
       ),

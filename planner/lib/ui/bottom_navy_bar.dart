@@ -51,7 +51,7 @@ List pages = [Home(),Setting(),User(),Massage()];
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(right: 8),
+                padding: const EdgeInsets.only(right: 25),
                 child: IconTheme(
                   data: IconThemeData(
                       size: iconSize,
