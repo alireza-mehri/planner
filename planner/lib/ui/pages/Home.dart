@@ -44,14 +44,35 @@ class _HomeState extends State<Home> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    
-                    IconButton(
+
+                    new PopupMenuButton<String>(
                       icon: Icon(
                         CustomIcons.option,
                         size: 12.0,
                         color: Colors.white,
                       ),
-                      onPressed: () {},
+                      color: Colors.white,
+                      onSelected: (String choice){print(choice);},
+                      itemBuilder: (BuildContext context){
+                        return [
+                          new PopupMenuItem(
+                            value: 'edit',
+                            child: new Row(
+                              mainAxisAlignment:  MainAxisAlignment.end,
+                              children: <Widget>[
+                              Text('ویرایش'),
+                            ],)
+                          ),
+                          new PopupMenuItem(
+                            value: 'exit',
+                            child: new Row(
+                              mainAxisAlignment:  MainAxisAlignment.end,
+                              children: <Widget>[
+                              Text('خروج'),
+                            ],)
+                          ),
+                        ];
+                      }
                     ),
                     Text("علیرضا مهری",
                         style: TextStyle(
