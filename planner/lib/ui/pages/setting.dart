@@ -1,3 +1,4 @@
+import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 
 class Setting extends StatefulWidget {
@@ -9,8 +10,14 @@ class _SettingState extends State<Setting> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
-      body: Text("Settinge"),
+      backgroundColor: Colors.white,
+      body: new Center(child: 
+      FlareActor(
+        "animations/Loading.flr",
+        alignment: Alignment.center,
+        fit: BoxFit.contain,
+        animation: "Alarm",
+        ),)
     );
   }
 }

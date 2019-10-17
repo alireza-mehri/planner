@@ -93,12 +93,16 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       ),
+                      
                       SizedBox(
                       width: 15.0,
                     ),
+                    Text("استاد: طوفانی",
+                        style: TextStyle(color: Colors.white))
                     ],  
                 ),
               ), 
+              
              Padding(padding: EdgeInsets.all(8.0),),                  
 Container(
             height: MediaQuery.of(context).size.height - 185.0,
