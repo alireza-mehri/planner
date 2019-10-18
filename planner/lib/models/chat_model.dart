@@ -12,8 +12,7 @@ List<ChatModel> dummyData = [
       name: "علیرضا مهری",
       message: "سلام چطوری ؟",
       time: "12:30",
-      avatarUrl:
-          "http://alirezamehri.ir/img/avatar.png"),
+      avatarUrl: "http://alirezamehri.ir/img/avatar.png"),
   new ChatModel(
       name: "سینا فرشی",
       message: "سلام, امروز چیکاره ایم ؟",
@@ -27,13 +26,13 @@ List<ChatModel> dummyData = [
       avatarUrl:
           "http://www.usanetwork.com/sites/usanetwork/files/styles/629x720/public/suits_cast_harvey.jpg?itok=fpTOeeBb"),
   new ChatModel(
-      name: "فاطمه محمدیان",
-      message: "سلام دوره فلاتر کی به اتمام میرسه ؟",
+      name: "سعید",
+      message: "خوبی؟",
       time: "10:30",
       avatarUrl:
           "http://www.usanetwork.com/sites/usanetwork/files/styles/629x720/public/suits_cast_harvey.jpg?itok=fpTOeeBb"),
   new ChatModel(
-      name: "حسین بابای",
+      name: "مهندس",
       message: "salaaam Alii :))",
       time: "12:30",
       avatarUrl:
