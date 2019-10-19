@@ -16,7 +16,7 @@ class _SettingState extends State<Setting> {
         "animations/Loading.flr",
         alignment: Alignment.center,
         fit: BoxFit.contain,
-        animation: "Alarm",
+        animation: "Alarmm",
         ),)
     );
   }
