@@ -224,7 +224,7 @@ class _LoginPageState extends State<LoginPage>
                 ),
                 child: Container(
                   width: 300.0,
-                  height: 210.0,
+                  height: 230.0,
                   child: Column(
                     children: <Widget>[
                       Padding(
@@ -297,7 +297,7 @@ class _LoginPageState extends State<LoginPage>
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 190.0),
+                margin: EdgeInsets.only(top: 205.0),
                 decoration: new BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   boxShadow: <BoxShadow>[
@@ -478,7 +478,7 @@ class _LoginPageState extends State<LoginPage>
                 ),
                 child: Container(
                   width: 300.0,
-                  height: 370.0,
+                  height: 395.0,
                   child: Column(
                     children: <Widget>[
                       Padding(
@@ -616,7 +616,7 @@ class _LoginPageState extends State<LoginPage>
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 355.0),
+                margin: EdgeInsets.only(top: 375.0),
                 decoration: new BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   boxShadow: <BoxShadow>[

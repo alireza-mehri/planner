@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:planner/components/drawer.dart';
-import 'package:planner/models/chat_model.dart';
 import 'package:planner/models/plan_model.dart';
 
 import 'customIcons.dart';

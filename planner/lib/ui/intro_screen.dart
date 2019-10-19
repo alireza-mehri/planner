@@ -58,7 +58,7 @@ class _IntroState extends State<Intro> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Container(
-                  alignment: Alignment.centerRight,
+                  alignment: Alignment.centerLeft,
                   child: FlatButton(
                     onPressed: () => Navigator.of(context).pushNamed("/home"),
                     child: Text(
@@ -172,7 +172,7 @@ class _IntroState extends State<Intro> {
                 _currentPage != _numPages - 1
                     ? Expanded(
                         child: Align(
-                          alignment: FractionalOffset.bottomRight,
+                          alignment: FractionalOffset.bottomCenter,
                           child: FlatButton(
                             onPressed: () {
                               _pageController.nextPage(

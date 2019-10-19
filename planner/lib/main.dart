@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         routes: {
           "/splash_screen" : (context) => new Directionality(textDirection: TextDirection.rtl, child: new SplashScreen()),
           "/" : (context) => new Directionality(textDirection: TextDirection.ltr, child: LoginPage()),
-          "/intro" : (context) => new Intro(),
+          "/intro" : (context) => new Directionality(textDirection: TextDirection.rtl, child: Intro()),
           "/home" : (context) => new Directionality(textDirection: TextDirection.ltr, child: Homemain(title: 'مربی')),
           
         },
